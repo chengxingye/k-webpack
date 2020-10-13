@@ -13,18 +13,18 @@ const fileRules = require('./rules/file.js')
 const fontRules = require('./rules/font.js')
 const jsRules = require('./rules/js.js')
 //查看用户配置是否存在
-process.env.CONSTANTS = fs.existsSync(path.resolve(process.cwd(), './vue.config.js'))
+process.env.CONSTANTS = fs.existsSync(path.resolve(process.cwd(), 'vue.config.js'))
 
 const { NODE_ENV } = process.env
 configChain
   .output
-  .path(path.resolve(__dirname, '../', constants.outputName))
+  .path(path.resolve(process.cwd(), constants.outputName))
   //hash:5, chunckhash:5, contenthash:5
   .filename(NODE_ENV == 'production' ?'[name].[contenthash:5].js':'[name].[hash:5].js')
   .end()
 const config = {
   entry: {
-    index: path.resolve(__dirname, '../src/index.js'),
+    index: path.resolve(process.cwd(), 'src/index.js'),
     // test: path.resolve(__dirname, '../src/c.js'),
   },
   mode: NODE_ENV,
@@ -35,7 +35,7 @@ const config = {
     htmlWebpack: {
       plugin: HtmlWebpackPlugin,
       args: [{
-        template: path.resolve(__dirname, '../src/index.html'),
+        template: path.resolve(process.cwd(), 'src/index.html'),
         filename: 'index.html'
       }]
     },

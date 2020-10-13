@@ -1,6 +1,6 @@
 <template>
   <div>
-    11112
+    <h2>hello webpack</h2>
   </div>
 </template>
 
