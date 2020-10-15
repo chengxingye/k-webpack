@@ -5,7 +5,8 @@ const path = require('path');
 module.exports = {
   entry: {
     library: [
-      'vue'
+      'vue',
+      'vue-route',
     ]
   },
   mode: 'production',

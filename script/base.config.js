@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const Config = require('webpack-chain');
 const configChain = new Config();
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
+const ComputedSizePlugin = require("./plugins/computed-size-plugin")
 
 const constants = require('./constants.js')
 const optimizations = require('./util/optimization.config.js')
@@ -38,6 +39,9 @@ const config = {
         template: path.resolve(process.cwd(), 'src/index.html'),
         filename: 'index.html'
       }]
+    },
+    size:{
+      plugin:ComputedSizePlugin
     },
     clear: {
       plugin:CleanWebpackPlugin

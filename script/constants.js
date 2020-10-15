@@ -12,8 +12,8 @@ module.exports = {
     '/api': 'http://localhost:3040'
   },
   filename:{
-    image:'assets/image',
-    file:'assets/file',
-    font:'assets/font',
+    image:'static/image',
+    file:'static/file',
+    font:'static/font',
   }
 }
