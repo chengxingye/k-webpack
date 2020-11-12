@@ -1,10 +1,10 @@
 {
-  "name": "k-webpack",
+  "name": "keep-webpack",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "bin": {
-    "test-webpack": "bin/bundler-webpack.js"
+    "keep": "bin/bundler-webpack.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,14 +14,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chengxingye/k-webpack.git"
+    "url": "git+https://github.com/chengxingye/keep-webpack.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chengxingye/k-webpack/issues"
+    "url": "https://github.com/chengxingye/keep-webpack/issues"
   },
-  "homepage": "https://github.com/chengxingye/k-webpack#readme",
+  "homepage": "https://github.com/chengxingye/keep-webpack#readme",
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
