@@ -9,8 +9,8 @@
   url('../font/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
 }
 body{
-  color:red; 
-  /* background:url(../img/1600091879191.jpg); */
+  color:yellow; 
+  background:url(../img/1600091879191.jpg);
   font-family: "webfont" !important;
 }
 .group{
