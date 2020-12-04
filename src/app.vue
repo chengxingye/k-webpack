@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>hello webpac1111k</h2>
+    <h2>hello</h2>
   </div>
 </template>
 
